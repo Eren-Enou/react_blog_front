@@ -94,17 +94,19 @@ export default function SinglePost() {
     
 	return (
 		<>
-			<h2 className="text-center">Post Options</h2>
-			<form onSubmit={handleSubmit}>
-				<div className="form-group">
-					<input type="text" name="title" className="form-control my-3" placeholder="Enter Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
-					<textarea name="content" className="form-control my-3" placeholder="Enter Body" value={content} onChange={(e) => setContent(e.target.value)}/>
-                    <div className="btn-group text-center">
-                        <input type="submit" value="Update Post" className="text-center btn btn-success w-50"/>
-                        <button className="btn btn-danger w-50" onClick={handleDelete}>Delete Post</button>
-				    </div>
-                </div>
-			</form>
+            <div className='text-center'>
+                <h2 className="text-center">Post Options</h2>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <input type="text" name="title" className="form-control my-3" placeholder="Enter Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+                        <textarea name="content" className="form-control my-3" placeholder="Enter Body" value={content} onChange={(e) => setContent(e.target.value)}/>
+                        <div className="btn-group text-center">
+                            <input type="submit" value="Update Post" className="text-center btn btn-success w-50"/>
+                            <button className="btn btn-danger w-50" onClick={handleDelete}>Delete Post</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 		</>
 	);
 };

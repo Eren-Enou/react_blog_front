@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+let randNum = Math.random() * 100
+
 export default function PostCard({ post }) {
     return (
         <div className="card mt-3">
