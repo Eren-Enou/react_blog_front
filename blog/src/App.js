@@ -11,7 +11,7 @@ import SinglePost from './views/SinglePost';
 
 
 function App() {
-    let name = 'Brian';
+    let name = 'Eren';
 
     const now = new Date();
 
@@ -33,13 +33,11 @@ function App() {
 
     return (
         <div className="App">
-            <Navbar username={name} city={"Chicago"} loggedIn={loggedIn} logUserOut={logUserOut} />
+            <Navbar username={name} city={"Cotati"} loggedIn={loggedIn} logUserOut={logUserOut} />
             {message ? <AlertMessage message={message} category={category} flashMessage={flashMessage} /> : null}
             <div className='container'>
                 <Routes>
                     <Route path='/' element={<Home />} /> 
-                    <Route path='/buttons' element={<ButtonDisplay name={name} />} />
-                    <Route path='/racers' element={<RacerDisplay />} />
                     <Route path='/register' element={<Register flashMessage={flashMessage} />} />
                     <Route path='/login' element={<Login flashMessage={flashMessage} logUserIn={setLoggedIn} />} />
                     <Route path='/create' element={<CreatePost flashMessage={flashMessage} loggedIn={loggedIn} />} />
