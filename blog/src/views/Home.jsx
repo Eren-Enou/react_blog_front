@@ -8,7 +8,7 @@ export default function Home() {
     useEffect(() => {
         // Define async function
         async function fetchPostData(){
-            let response = await fetch('http://localhost:5000/api/posts')
+            let response = await fetch('https://kekambas-blog-api.onrender.com/api/posts')
             let posts = await response.json()
             setPosts(posts);
         };
