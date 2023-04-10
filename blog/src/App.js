@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AlertMessage from './components/AlertMessage';
 import Navbar from './components/Navbar';
-import ButtonDisplay from './views/ButtonDisplay';
 import CreatePost from './views/CreatePost';
 import Home from './views/Home';
 import Login from './views/Login';
